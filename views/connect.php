@@ -23,7 +23,7 @@
             <h1>Se connecter</h1>
             <p>Merci d'utilisé votre mail et mot de passe</p>
         </div>
-        <form class="form" action="connect.php" method="POST">
+        <form class="form" action="../controller/getEleve.php" method="POST">
             <div class="row">
                 <div class="col">
                     <label>
@@ -45,16 +45,6 @@
                 </div>
             </div>
         </form>
-    </div>
-
-    <div class="content-form">
-        <?php
-
-
-
-        echo $_POST["email"], $_POST["password"];
-
-        ?>
     </div>
 
 </html>
