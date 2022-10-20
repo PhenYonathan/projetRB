@@ -13,4 +13,6 @@ $rqt = $cnx->prepare("select nom, prenom, email, password from eleve where email
 $rqt->bindValue(1, $mail);
 $rqt->bindValue(2, $password);
 
-$rqt->execute();
+$unEleve = $rqt->execute();
+
+return $unEleve;
