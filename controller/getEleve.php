@@ -21,7 +21,8 @@ $unEleve = $rqt->fetchAll();
 //var_dump($unEleve);
 
 if ($unEleve[0]["email"] == $mail && $unEleve[0]["password"] == $password){
-    echo "Connexion réussie";
+    echo "Connexion réussie <br>";
+    echo "<a href='getAllEleves.php'>Voir la liste des élèves ?</a>";
 }else{
     echo "Connexion échouée";
 }

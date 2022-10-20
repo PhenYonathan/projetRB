@@ -8,9 +8,8 @@ $cnx = FunctionsUtils::activeCnx();
 //$rqt = $cnx->prepare("select nom, prenom, email, password from eleve");
 //$rqt->execute();
 
-function lstEleves()
-{
-    $cnx = FunctionsUtils::activeCnx();
+//function lstEleves()
+//{
     $requete = $cnx->prepare("select nom, prenom, email from eleve order by nom ASC;");
     $requete->execute();
     $lesEleves = $cnx->query($requete);
@@ -25,10 +24,11 @@ function lstEleves()
         $ligne=$lesEleves->fetch();
         $i++ ;
     }
+
 //    $lesEleves->closeCursor();
 
-    return $eleve;
+//    return $eleve;
 
-}
+//}
 
 
